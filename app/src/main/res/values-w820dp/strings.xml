@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username1">username</string>
+    <string name="password">password</string>
+    <string name="btnLogin">Login</string>
+    <string name="mobile">Enter Mobile Number</string>
+    <string name="otp">Enter OTP</string>
+</resources>

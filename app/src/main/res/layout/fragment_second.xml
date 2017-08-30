@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardview_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <com.wolfsoft.teammeetingschedule.TextView_Lato
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Select Clinic"
+                            android:textColor="@color/colorGray"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Spinner
+                                android:id="@+id/spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.5"
+                                android:entries="@array/area"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardview_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/photo"
+                            app:civ_border_color="@color/colorBackroundWhite"
+                            app:civ_border_width="2dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.8"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp">
+
+                            <com.wolfsoft.teammeetingschedule.TextView_Lato
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4pm - 5pm"
+                                android:textColor="@color/colorGray"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <com.wolfsoft.teammeetingschedule.Textview_lato_thin
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Available"
+                                android:textColor="@color/colorLightGray"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center">
+
+                            <com.wolfsoft.teammeetingschedule.TextView_Lato
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/roun_rect_orange"
+                                android:text="Join"
+                                android:textColor="#fff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="7dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardview_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/photo"
+                            app:civ_border_color="@color/colorBackroundWhite"
+                            app:civ_border_width="2dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.8"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp">
+
+                            <com.wolfsoft.teammeetingschedule.TextView_Lato
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5pm - 6pm"
+                                android:textColor="@color/colorGray"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <com.wolfsoft.teammeetingschedule.Textview_lato_thin
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Full"
+                                android:textColor="@color/colorLightGray"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/roun_rect_colorprimary"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#fff"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="7dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardview_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/photo"
+                            app:civ_border_color="@color/colorBackroundWhite"
+                            app:civ_border_width="2dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.8"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp">
+
+                            <com.wolfsoft.teammeetingschedule.TextView_Lato
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6pm - 7pm"
+                                android:textColor="@color/colorGray"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <com.wolfsoft.teammeetingschedule.Textview_lato_thin
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Full"
+                                android:textColor="@color/colorLightGray"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/roun_rect_colorprimary"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#fff"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="7dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardview_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/photo"
+                            app:civ_border_color="@color/colorBackroundWhite"
+                            app:civ_border_width="2dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.8"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp">
+
+                            <com.wolfsoft.teammeetingschedule.TextView_Lato
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="7pm - 8pm"
+                                android:textColor="@color/colorGray"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <com.wolfsoft.teammeetingschedule.Textview_lato_thin
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Available"
+                                android:textColor="@color/colorLightGray"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center">
+
+                            <com.wolfsoft.teammeetingschedule.TextView_Lato
+                                android:id="@+id/textView_Lato"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/roun_rect_orange"
+                                android:text="Join"
+                                android:textColor="#fff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--      <android.support.v7.widget.CardView
+                     android:layout_width="match_parent"
+                     android:layout_height="80dp"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginTop="7dp"
+                     card_view:cardCornerRadius="2dp"
+                     card_view:cardElevation="2dp">
+
+                    <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="@drawable/cardview_bg">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_vertical"
+                             android:layout_margin="5dp"
+                             android:orientation="horizontal"
+                             android:weightSum="5">
+
+                             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                 android:layout_width="0dp"
+                                 android:layout_height="55dp"
+                                 android:layout_weight="1"
+                                 android:src="@drawable/photo"
+                                 app:civ_border_color="@color/colorBackroundWhite"
+                                 app:civ_border_width="2dp" />
+
+                             <LinearLayout
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="2.8"
+                                 android:gravity="center_vertical"
+                                 android:orientation="vertical"
+                                 android:paddingLeft="10dp">
+
+                                 <com.wolfsoft.teammeetingschedule.TextView_Lato
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="Rachelle Morgan"
+                                     android:textColor="@color/colorGray"
+                                     android:textSize="15dp"
+                                     android:textStyle="bold" />
+
+                                 <com.wolfsoft.teammeetingschedule.Textview_lato_thin
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginTop="2dp"
+                                     android:text="Jack of all Trades"
+                                     android:textColor="@color/colorLightGray"
+                                     android:textSize="14dp" />
+                             </LinearLayout>
+
+                             <LinearLayout
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="1.2"
+                                 android:gravity="center">
+
+                                 <TextView
+                                     android:layout_width="30dp"
+                                     android:layout_height="30dp"
+                                     android:background="@drawable/roun_rect_colorprimary"
+                                     android:padding="5dp"
+                                     android:text=""
+                                     android:textColor="#fff"
+                                     android:textSize="12sp"
+                                     android:textStyle="bold" />
+                             </LinearLayout>
+
+                         </LinearLayout>
+                     </LinearLayout>
+            </android.support.v7.widget.CardView>-->
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
